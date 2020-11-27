@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |spec|
-    spec.name         = "UnitTestWihtPod"
+    spec.name         = "NewOne"
     spec.version      = "1.0.60"
     spec.summary      = "A really short description of test_sic. Included some specific points"
     spec.description  = "Signer’s Interaction Component. Part of the eID App which is responsible for managing keys, interractins with SSA"
