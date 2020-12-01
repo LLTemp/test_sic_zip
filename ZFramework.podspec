@@ -15,4 +15,17 @@ Pod::Spec.new do |spec|
     spec.header_mappings_dir = 'ZFramework.framework/OpenSSL/include'
     
     #spec.dependency 'KeychainSwift', '~> 19.0'
+
+
+    post_install do |installer|
+      installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+          target.build_settings(config.name)['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        end
+      end
+    end
+
 end
+
+
+
