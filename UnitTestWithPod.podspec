@@ -8,11 +8,9 @@ Pod::Spec.new do |spec|
     spec.license      = "MIT"
     spec.author       = { "SergeyBrazhnik" => "sergey.brazhnik@ledgerleopard.com" }
     spec.platform     = :ios, "14.0"
-
-    spec.source       = { :http => "https://github.com/LLTemp/test_sic_zip/raw/main/UnitTestWithPod.framework.zip" }
+    spec.source = { :http => "https://github.com/LLTemp/test_sic_zip/raw/main/UnitTestWithPod-1.2.0.framework.zip" }
     spec.vendored_frameworks = 'UnitTestWithPod.framework'
     spec.vendored_libraries = 'UnitTestWithPod.framework/lib'
     spec.header_mappings_dir = 'UnitTestWithPod.framework/openssl'
-    
     spec.dependency 'KeychainSwift', '~> 19.0'
 end
